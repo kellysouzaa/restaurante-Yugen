@@ -5,7 +5,7 @@
   flex-wrap: wrap;  /*qdo utilizamos blocos eles ficam um do lado do outro mesmo q tenha tamanho total da tela, entao para resolver isso utilizamos o flex-wrap:wrap */
   justify-content:center;/*alinhando os blocos na horizontal dentro do principal*/
   align-items:center; /*alinhando os blocos na vertical */
-  width: 100%; /*Largura do principal*/
+  width: 90%; /*Largura do principal*/
   height: auto;
   background-color: #000000;
   padding: 0px; /*espaço entre as caixas e o principal*/
@@ -273,6 +273,8 @@ nav ul li a:hover {
 
 .zoom:hover {
   transform: scale(1.1); /* Aumenta 10% */
+  border-style: groove;
+  border-color: #352020;
 }
 
 

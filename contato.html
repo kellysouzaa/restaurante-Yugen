@@ -66,7 +66,7 @@
   <legend>Faça sua reserva</legend>
 
    <label for="cNome"> Nome: </label> <br>
-   <input type="text" name="tNome" id="cNome" size="20" maxlength="20"    placeholder="Digite seu nome aqui" autofocus required />
+   <input type="text" name="tNome" id="cNome" size="20" maxlength="20" autofocus required />
 
 	<!-- maxlength= qtde de caracteres que irá aceitar
 	*** size= tamanho da caixa de texto 
@@ -88,15 +88,15 @@
 	
 <p>
 
-   <label for="cNasc"> Data da reserva:</label> <br>
+   <label for="cReserva"> Data da reserva:</label> <br>
   
-   <input type="date" name="tNasc" id="cNasc"/>
+   <input type="date" name="tReserva" id="cReserva"/>
 </p>
 <!-- aparecerá o calendário. Se não aparecer é pq o navegador não está atualizado -->
 
 <p>
-   <label for="cRua">Endereço:</label> <br>
-   <input type="text" name="tRua" id="cRua" size="30" maxlength="50"  placeholder="Rua, Av, Trav,..." required />
+   <label for="cTel">Telefone:</label> <br>
+   <input type="tel" name="tTel" id="cTel" size="30" maxlength="50"  placeholder="(11)55-9999-9999" required />
 </p>
 
 
@@ -111,6 +111,7 @@
 
 <div class="botoes">
    <input type="submit" name="Enviar"  /> 
+   <input type="reset" name="Limpar"/>
  
 </div>
 

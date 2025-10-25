@@ -71,10 +71,11 @@ Input:hover::placeholder{
 }
 
 .botoes{
-	width: 100px;
+	width: 150px;
 	text-align:center;
 	padding-bottom: 50px;
 	margin: auto;
+	
 	
 }
 
