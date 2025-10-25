@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A melhor comida japonesa</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/estiloContato.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+    
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <div class="boxLogo">
+           <img src="IMAGENS/logo.png"  class="tamanhoLogo"  alt="LOGO DA EMPRESA"> 
+        
+    </div>
+
+    <div class="boxMenu">
+      <nav>
+        <ul>
+          <li> <a href="index.html"> Home </a>   </li>
+          <li> <a href="cardapio.html"> Cardápio </a>   </li>
+          <li> <a href="quemsomos.html"  > O Yūgen </a>   </li>
+          <li> <a href="contato.html" style="background-color: coral;border-radius: 5px;color: rgb(66, 11, 11);"> Contato </a>   </li>
+        </ul>
+      </nav>
+
+    </div>
+
+  
+
+
+ <!-- CRIEI DUAS CAIXAS PARA COLOCAR A IMAGEM  DE UM LADO E O FORMULÁRIO DO OUTRO -->
+    
+<div class="boxLadoEsquerdo">
+
+   <img src="IMAGENS/reserva.png" class="tamanhoImgCardapio"  alt="">
+
+</div>
+
+
+
+
+<div class="boxLadoDireito">
+
+      <div id="conteudo_formulario"> <!--caixa que receberá o formulário-->
+
+      <form method="post" id="fContato" action="mailto:kelly.psouza@sp.senac.br">
+	
+<!-- método post para guardar as informações
+	id (IDENTIFICAÇÃO) para chamar no css e formatar
+	action para qual email irão os dados
+	temos o method GET para pesquisas. Ele não guarda o conteúdo
+
+	GET PESQUISAS (PEGA OS DADOS PARA PESQUISAR)
+	POST PARA ENVIAR DADOS (DADOS CADASTRAIS PARA ENVIAR POR EMAIL)
+ -->
+
+
+<fieldset id="usuario"> <!-- conjunto de campos em bloco-->
+  <legend>Faça sua reserva</legend>
+
+   <label for="cNome"> Nome: </label> <br>
+   <input type="text" name="tNome" id="cNome" size="20" maxlength="20"    placeholder="Digite seu nome aqui" autofocus required />
+
+	<!-- maxlength= qtde de caracteres que irá aceitar
+	*** size= tamanho da caixa de texto 
+	*** placeholder -  dica para o usuário de qual será o conteúdo da caixa
+	***autofocus - cursor ficará dentro da caixa
+	 required -  e o campo será obrigatório
+-->
+	
+
+<!-- required - campo obrigatório	 -->
+	
+<p>
+   <label for="cMail">E-mail:</label> <br>
+   <input type="email" name="tMail" id="cMail" size="30" maxlength="30"  placeholder="Ex: exemplo@mail.com" required />
+</p>
+
+	
+
+	
+<p>
+
+   <label for="cNasc"> Data da reserva:</label> <br>
+  
+   <input type="date" name="tNasc" id="cNasc"/>
+</p>
+<!-- aparecerá o calendário. Se não aparecer é pq o navegador não está atualizado -->
+
+<p>
+   <label for="cRua">Endereço:</label> <br>
+   <input type="text" name="tRua" id="cRua" size="30" maxlength="50"  placeholder="Rua, Av, Trav,..." required />
+</p>
+
+
+<p> 
+   <label for="cMsg">Mensagem:</label> <br>
+	<textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui sua mensagem">
+	
+	</textarea>
+</p>
+
+
+
+<div class="botoes">
+   <input type="submit" name="Enviar"  /> 
+ 
+</div>
+
+</fieldset>
+
+
+
+</form>
+</div>
+
+
+
+      
+      </div>
+
+      
+
+      
+
+      
+      
+
+
+
+</div>
+
+
+
+<div class="boxRedesSociais">
+
+  <a href="#" target="_blank">       
+    <img src="IMAGENS/Facebook.png" class="tamanhoIcone" alt="">
+  </a>
+
+  <a href="#" target="_blank">  
+    <img src="Imagens/Instagram.png" class="tamanhoIcone" alt="">
+  </a>
+
+
+  <a href="https://api.whatsapp.com/send?phone=5511012345678" target="_blank">
+    <img src="IMAGENS/WhatsApp.png" alt="whatsapp" title="Abrir no WhatsApp"  class="tamanhoIcone">
+</a>
+
+
+</div>
+
+
+  <div class="boxRodape"> 
+  Todos Direitos Reservados - 2025 
+  </div>
+
+
+</div>
+
+
+
+
+
+  
+    
+</body>
+</html>
