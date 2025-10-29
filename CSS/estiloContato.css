@@ -41,8 +41,8 @@ legend{ /*formatação das legendas*/
 fieldset{ /*vamos colocar borda nos assuntos*/
 	width: 100%;
 	margin:10px;
-	border-radius: 5px;
-	border-color:#b0acae;
+	border-radius: 10px;
+	border-color:#161615;
 	text-align: center;
 	
 }

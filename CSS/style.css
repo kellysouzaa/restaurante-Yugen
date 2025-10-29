@@ -5,7 +5,7 @@
   flex-wrap: wrap;  /*qdo utilizamos blocos eles ficam um do lado do outro mesmo q tenha tamanho total da tela, entao para resolver isso utilizamos o flex-wrap:wrap */
   justify-content:center;/*alinhando os blocos na horizontal dentro do principal*/
   align-items:center; /*alinhando os blocos na vertical */
-  width: 90%; /*Largura do principal*/
+  width: 100%; /*Largura do principal*/
   height: auto;
   background-color: #000000;
   padding: 0px; /*espaço entre as caixas e o principal*/
@@ -15,12 +15,12 @@
 }
 
 body{
-  background-color: #201212;
+  background-color: #000000;
 }
 .boxLogo{ /*CAIXA QUE ESTÁ A LOGO*/
     width: 5%;
     height: 50px;
-    background-color: #352020;
+    background-color: #000000;
     
 }
 
@@ -32,7 +32,7 @@ body{
 .boxMenu{
     width: 95%;
     height: 50px;
-   background-color: #201212;
+    background-color: #000000;
    
 }
 
@@ -45,7 +45,7 @@ body{
 
           width: 100%;
           height: 400px;
-          background-image: url('../IMAGENS/sashimi.webp'); /* imagem inicial */
+          background-image: url('../IMAGENS/banner1.png'); /* imagem inicial */
           background-size: cover; /*ajusta o tamanho da imagem de fundo para garantir que ela cubra completamente o elemento, mesmo que isso signifique cortar partes da imagem*/
           background-position: center;
           transition: background-image 0.5s ease-in-out;
@@ -63,7 +63,7 @@ body{
         }
 
         .boxBannerRotativo:hover {
-          background-image: url('../IMAGENS/yakimeshiCardapio.jpg'); /* imagem ao passar o mouse */
+          background-image: url('../IMAGENS/banner2.png'); /* imagem ao passar o mouse */
           
         
 
@@ -76,29 +76,34 @@ body{
   background-color: #252424;
   margin: 2%; /*Espaço entre as caixas*/
   padding: 1%; /*espaço entre o conteudo e as bordas*/
-  border-radius: 10px; /*borda arredondada*/
+
+  /*border-radius: top-left top-right bottom-right bottom-left;*/
+  border-radius: 0 100px 0 100px;
+ 
   text-align: center;
-  font-family:Eras ITC, Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.1em;
-  line-height: 1.6;
-  color: azure;
+  font-family:Merriweather Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.0em;
+  letter-spacing: 0.09em; /*espaçamento entre letras*/
+  line-height: 1.6; /*espaçamento entre linhas*/
+  color: rgb(175, 186, 186);
 }
 
 .tamanhoImgCard{ /*classe para imagem dentro do card*/
   width: 100%;
   height: auto;
-  border-radius: 5px;
+  border-radius: 80px;
 }
 
 h1{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family:Merriweather Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.5em;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.39em;
 }
 
 .boxBannerEstatico{
 width: 100%;
 height:400px;
-background-color:chocolate;
 margin-bottom: 50px;
 }
 
@@ -125,8 +130,8 @@ li{
 .boxRodape{
   width: 100%;
   height: 50px;
- background-color: #352020;
-  font-family: Century Gothic, Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #352020;
+  font-family:Merriweather Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   color: aliceblue;
   padding-top: 2%;
@@ -137,7 +142,7 @@ li{
 nav{
 	max-width: 100%;
 	height:50px;
-  background-color: #352020;
+ 
 }
 
 nav ul{
@@ -150,7 +155,8 @@ nav ul{
 nav ul li{
 	display: inline-block;	/*blocos na mesma linha*/
 	margin-right:10px; /*distância entre os botoes*/
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family:Merriweather Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0.08em;
   font-size: 1.1em;
   
 }
@@ -160,16 +166,28 @@ nav ul li a{
 	text-decoration: none; /*retirar a linha abaixo dos links normais*/
 	display: block;
 	text-align: center;
-  background-color: #352020; /*cor do botao sem clicar. Aqui está da mesma cor do nav por isso não está aparecendo*/
+  background-color: #000000; /*cor do botao sem clicar. Aqui está da mesma cor do nav por isso não está aparecendo*/
   color: rgb(255, 255, 255);
 }
 
 nav ul li a:hover {
-	background-color:coral; /*cor quando passar o mouse*/
+	background-color: rgb(234, 164, 14); /*cor quando passar o mouse*/
 	transition: all .5s; 
-	border-radius:5px; /*arredondado*/
+  border-radius: 0 20px 0 20px;
+	
   color: rgb(66, 11, 11);;
 }
+
+/*quando eu estiver na pagina o botao ficará colorido*/
+
+.botaoColorido{
+  background-color: rgb(234, 164, 14);
+  border-radius: 0 20px 0 20px;
+  color: rgb(66, 11, 11);
+
+}
+
+
 
 
 /* CSS DO CARDAPIO e QUEM SOMOS */
@@ -184,7 +202,7 @@ nav ul li a:hover {
   text-align: center;
   border-radius:5px; /*arredondado*/
   border-style: groove; /*estilo da borda */
-  border-color: rgb(40, 37, 34); /*cor da borda*/
+  border-color: rgb(53, 41, 41); /*cor da borda*/
 }
 
 
@@ -221,14 +239,13 @@ nav ul li a:hover {
   padding: 2%; /*espaço entre o conteudo e as bordas*/
   border-radius: 10px; /*borda arredondada*/
   text-align: center;
-  font-family:Eras ITC, Verdana, Geneva, Tahoma, sans-serif;
+  font-family:Merriweather Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.1em;
   line-height: 1.6;
   color: azure;
   font-size: 1em;
-  border-style: groove; /*estilo da borda */
-  border-color: rgb(0, 0, 0); /*cor da borda */
-
+  
+  
 }
 
 .boxCardCardapio{
@@ -241,14 +258,15 @@ nav ul li a:hover {
   width:20%;
   height: 300px;
   background-color: #252424;
-  margin: 1%; /*Espaço entre as caixas*/
+  margin: 2%; /*Espaço entre as caixas*/
   padding: 1%; /*espaço entre o conteudo e as bordas*/
   border-radius: 10px; /*borda arredondada*/
   text-align: center;
-  font-family:Eras ITC, Verdana, Geneva, Tahoma, sans-serif;
+  font-family:Merriweather Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.1em;
+  letter-spacing: 0.08em;
   line-height: 1.6;
-  color: azure;
+  color: rgb(175, 186, 186);
   font-size: 1em;
   /* border-style: groove; /*estilo da borda 
  border-color: rgb(157, 125, 86); cor da borda*/
@@ -273,9 +291,12 @@ nav ul li a:hover {
 
 .zoom:hover {
   transform: scale(1.1); /* Aumenta 10% */
-  border-style: groove;
-  border-color: #352020;
+  /*border-style: groove;
+  border-color: rgb(53, 41, 41); cor da borda*/
 }
+
+
+
 
 
 /* tamanho do ícone das redes sociais */
@@ -290,5 +311,288 @@ nav ul li a:hover {
 
 a  {
   text-decoration: none;
+}
+
+
+
+/* BREAKPOINTS - TAMANHO DA TELA EM DIFERENTES DISPOSITIVOS*/
+
+ @media screen and (min-width : 376px) {
+  .boxCard {
+  width:50%;
+  height:auto;
+  margin: 2%; 
+  padding: 50px;
+   /*posso alterar qualquer propriedade aqui - fonte, tamanha, fundo...*/
+}
+
+.boxCardCardapio {
+ width:50%;
+  height:auto;
+  margin: 2%; 
+  
+ 
+}
+
+.boxCardQuem{
+  width:50%;
+  height:auto;
+  margin: 2%; 
+  
+
+}
+
+.boxLadoEsquerdo{
+  width:50%;
+  height:auto;
+  margin: 2%; 
+  
+
+}
+
+
+.boxLadoDireito{
+  width:50%;
+  height:auto;
+  margin: 2%; 
+  
+
+}
+
+
+
+nav ul li{
+	display: inline-block;	/*blocos na mesma linha*/
+	margin-right:10px; /*distância entre os botoes*/
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.6vw;
+  
+}
+
+.boxLogo{
+  width: 30%;
+  height: auto;
+  text-align: center;
+  background-color: black;
+
+}
+
+.tamanhoLogo{
+  width: 50%;
+  height: auto;
+}
+
+.boxBannerEstatico{
+  width: 100%;
+  height: auto;
+}
+
+.tamanhoImgEstatico{
+  width: 100%;
+  height: auto;
+
+}
+
+ }
+
+
+
+
+@media screen and (min-width : 576px) {
+ .boxCard {
+    width: 50%;
+    height: auto;
+    margin: 1%;
+   
+   }
+
+
+   .boxLadoEsquerdo{
+  width:50%;
+  height:auto;
+  margin: 2%; 
+  
+
+}
+
+
+.boxLadoDireito{
+  width:50%;
+  height:auto;
+  margin: 2%; 
+  
+
+}
+
+  nav ul li{
+	display: inline-block;	/*blocos na mesma linha*/
+	margin-right:10px; /*distância entre os botoes*/
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+  
+}
+
+
+.boxLogo{
+  width:30%;
+  height: auto;
+  text-align: center;
+  background-color: black;
+
+}
+
+.tamanhoLogo{
+  width: 50%;
+  height: auto;
+}
+
+.tamanhoImgEstatico{
+  width: 100%;
+  height: auto;
+
+}
+
+.boxBannerEstatico{
+  width: 100%;
+  height: auto;
+}
+
+}
+
+@media screen and (min-width : 768px) {
+ .boxCard {
+    width: 20%;
+    margin-right: 5%;
+    padding: 1%;
+    
+   }
+
+
+   nav ul li{
+	display: inline-block;	/*blocos na mesma linha*/
+	margin-right:10px; /*distância entre os botoes*/
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+  
+}
+
+.boxLogo{
+  width: 30%;
+  height: auto;
+  text-align: center;
+  background-color: black;
+
+}
+
+.tamanhoLogo{
+  width: 50%;
+  height: auto;
+}
+
+.tamanhoImgEstatico{
+  width: 100%;
+  height: auto;
+
+}
+
+.boxBannerEstatico{
+  width: 100%;
+  height: auto;
+}
+
+}
+
+@media screen and (min-width : 992px) {
+ .boxCard {
+    width: 20%;
+    margin-right: 1%;
+    padding: 1%;
+    
+    
+  }
+
+.boxLogo{
+  width: 2%;
+  height: auto;
+  text-align: center;
+  background-color: black;
+  padding-left: 0;
+
+}
+
+.tamanhoLogo{
+  width: 50%;
+  height: auto;
+}
+
+.boxBannerEstatico{
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+}
+
+/* tela maior PC */
+
+@media screen and (min-width : 1200px) {
+  .boxCard {
+    width: 25%;
+    margin-right: 2%;
+    padding: 2%;
+    background-color: #2c3030;
+  }
+
+  .boxLogo{
+  width: 4%;
+  padding-left: 1%;
+  background-color: #000000;
+
+
+}
+
+
+.boxCardCardapio {
+ width:20%;
+  height:auto;
+  margin: 1%; 
+  
+ 
+}
+
+.boxCardQuem{
+  width:25%;
+  height:auto;
+  margin: 2%; 
+  
+
+}
+
+.tamanhoLogo{
+  width: 100%;
+  height: auto;
+}
+
+.boxLadoEsquerdo{
+  width:40%;
+  height:auto;
+  margin: 1%; 
+  
+
+}
+
+
+.boxLadoDireito{
+  width:40%;
+  height:auto;
+  margin: 1%; 
+  
+
+}
+
+
+
 }
 
